@@ -1,0 +1,128 @@
+/* Reset básico para el espaciado */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+  /* Asegúrate de no tener un max-width que limite el ancho aquí */
+}
+
+nav ul {
+  list-style: none;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+  margin-left: 20px;
+  font-size: 20px;
+  background-color: #949494;
+  border-radius: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+html body {
+  margin: 0px;
+  width: 100%;
+}
+
+.hero {
+  background-color: #333; /* Color de fondo consolidado aquí */
+  text-align: center;
+  padding: 10px 0em;
+  margin-top: 15px;
+}
+
+#theme {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.subscription {
+  background-color: #333;
+  color: white;
+  padding: 2em 0;
+  text-align: center;
+}
+
+.subscription h2 {
+  margin-bottom: 1em;
+}
+
+.subscription form {
+  display: inline-block;
+}
+
+.subscription input[type="email"] {
+  padding: 0.5em;
+  margin-right: 0.5em;
+}
+
+.subscription button {
+  padding: 0.5em 1em;
+  background-color: #356ade;
+  border: none;
+  cursor: pointer;
+}
+
+.courses {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
+  align-items: center;
+}
+
+.courses p {
+  padding: 10px;
+}
+
+.course {
+  background-color: #333;
+  color: white;
+  padding: 1em;
+  width: 30%;
+  height: 250px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+header {
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+img {
+  width: 130px;
+  height: auto;
+  background-color: white;
+  border-radius: 10px;
+}
+
+#primero {
+  color: white;
+}
