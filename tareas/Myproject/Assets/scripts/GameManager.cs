@@ -1,3 +1,8 @@
+// Joseph Shakalo
+// matricula A01784107
+// 15 / 03 / 2024
+// Script de juego SIMON
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
