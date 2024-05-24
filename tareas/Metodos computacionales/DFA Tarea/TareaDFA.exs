@@ -18,10 +18,16 @@ defmodule DFA do
   end
 
 
+ # cond determina si continuar procesando o agregar un nuevo token a la lista.
+
   # Processes each character of the string using the DFA rules.
+
+  # delta.(state, char) aplica la función de transición para obtener el nuevo estado y si se encontró un token.
 
   def dfa([char | tail], {delta, accept, state}, token, acc) do
     [newstate, found] = delta.(state, char)
+
+    # update acumula los caracteres procesados si no son espacios.
 
     update = if char != " " do
       [char | acc]
@@ -34,6 +40,8 @@ defmodule DFA do
       true -> dfa(tail, {delta, accept, newstate}, [{found, Enum.reverse(tl(update)) |> Enum.join("")} | token], [hd(update)])
     end
   end
+
+  # Esta función maneja la finalización del procesamiento cuando todos los caracteres han sido procesados.
 
   # Finalizes the token list when all characters have been processed.
   def dfa([], {_delta, accept, state}, token, acc) do
@@ -49,6 +57,8 @@ defmodule DFA do
       true -> false
     end
   end
+
+    #delta_arithmetic define las reglas de transición para cada estado basado en el carácter de entrada.
 
     # Defines the transition rules for each state based on the input character.
     def delta_arithmetic(start, char) do

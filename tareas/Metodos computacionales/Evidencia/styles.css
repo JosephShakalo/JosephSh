@@ -1,0 +1,45 @@
+/* 
+Evidencia Joseph Shakalo A01784107
+Fecha: 24/05/2024
+styles.css
+*/
+
+body {
+    font-family: monospace;
+    background-color: #2e3440;
+    color: #d8dee9;
+  }
+  
+  .keyword {
+    color: #ff8c00; /* Orange */
+    font-weight: bold;
+  }
+  
+  .operator {
+    color: #ff4500; /* OrangeRed */
+  }
+  
+  .delimiter {
+    color: #b300ff; /* Gold */
+  }
+  
+  .identifier {
+    color: #00bfff; /* DeepSkyBlue */  
+  }
+  
+  .literal {
+    color: #7fff00; /* Chartreuse */
+  }
+  
+  .comment {
+    color: #e0e017; /* GreenYellow */
+    font-style: italic;
+  }
+  
+  .unknown {
+    color: #ff69b4; /* HotPink */
+  }
+  
+  .string{
+    color:brown ;
+  }
